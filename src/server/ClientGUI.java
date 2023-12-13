@@ -139,8 +139,10 @@ public class ClientGUI extends JFrame {
     }
 
     @Override
-    public int getDefaultCloseOperation() {
-        disconnectFromServer();
-        return super.getDefaultCloseOperation();
+    protected void processWindowEvent(WindowEvent e) {
+        super.processWindowEvent(e);
+        if (e.getID() == WindowEvent.WINDOW_CLOSING){
+            disconnectFromServer();
+        }
     }
 }
