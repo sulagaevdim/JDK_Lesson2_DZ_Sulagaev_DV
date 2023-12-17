@@ -127,8 +127,8 @@ public class ServerWindow extends JFrame {
                     appendLog("Сервер уже был остановлен");
                 } else {
                     work = false;
-                    for (ClientGUI clientGUI: clientGUIList){
-                        disconnectUser(clientGUI);
+                    while (!clientGUIList.isEmpty()){
+                        disconnectUser(clientGUIList.get(clientGUIList.size()-1));
                     }
                     appendLog("Сервер остановлен!");
                 }
