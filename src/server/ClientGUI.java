@@ -140,9 +140,9 @@ public class ClientGUI extends JFrame {
 
     @Override
     protected void processWindowEvent(WindowEvent e) {
-        super.processWindowEvent(e);
         if (e.getID() == WindowEvent.WINDOW_CLOSING){
             disconnectFromServer();
         }
+        super.processWindowEvent(e);
     }
 }
