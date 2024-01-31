@@ -21,7 +21,7 @@ public class ClientGUI extends JFrame {
     JButton btnLogin, btnSend;
     JPanel headerPanel;
 
-    ClientGUI(ServerWindow server){
+    public ClientGUI(ServerWindow server){
         this.server = server;
 
         setSize(WIDTH, HEIGHT);
