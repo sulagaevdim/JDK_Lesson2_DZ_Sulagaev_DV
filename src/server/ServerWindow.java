@@ -20,7 +20,7 @@ public class ServerWindow extends JFrame {
     JTextArea log;
     boolean work;
 
-    ServerWindow(){
+    public ServerWindow(){
         clientGUIList = new ArrayList<>();
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
